@@ -41,8 +41,8 @@ app.use(bodyParser.json());
 let routes = require('./routes/appRoutes');
 routes(app);
 
-//Inicializador del servidor con el puerto 5000
-const PORT = process.env.PORT || 5000;
+//Inicializador del servidor con el puerto 8080
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
     console.log(`La aplicación esta a la escucha en ${PORT}`);
 });

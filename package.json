@@ -4,8 +4,11 @@
   "description": "Prueba técnica solicitada por Trato",
   "main": "app.js",
   "scripts": {
-    "test": "node app.js",
-    "start": "node app.js"
+    "deploy": "gcloud app deploy",
+    "start": "node app.js",
+    "system-test": "repo-tools test app",
+    "test": "npm run system-test",
+    "e2e-test": "repo-tools test deploy"
   },
   "repository": {
     "type": "git",
@@ -20,6 +23,16 @@
     "save": "^2.3.3"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9"
+    "nodemon": "^1.18.9",
+    "@google-cloud/nodejs-repo-tools": "^3.0.0"
+  },
+  "cloud-repo-tools": {
+    "test": {
+      "app": {
+        "msg": "Hola TRATO!!"
+      }
+    },
+    "requiresKeyFile": true,
+    "requiresProjectId": true
   }
 }
