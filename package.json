@@ -1,0 +1,25 @@
+{
+  "name": "trato-techinical-test",
+  "version": "0.0.1",
+  "description": "Prueba técnica solicitada por Trato",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.gitlab.com/smith07"
+  },
+  "author": "Rafael Herrera (rafaelhecr@protonmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "save": "^2.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
