@@ -1,4 +1,4 @@
-# Technical Test TRATO
+# My API REST Demo
 
 _Este proyecto es presentado para ser evaluado en el ejercicio de crear una API REST de Node.js con MySQL_
 
